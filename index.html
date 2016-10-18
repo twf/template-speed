@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <title>AMP's Stacic page loader</title>
+    <link rel="canonical" href="index.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -17,13 +17,25 @@
         ]
       }
     </script>
+    <style amp-custom>
+      /* any custom style goes here */
+      body {
+        background-color: gray;
+        font-family: Arial;
+      }
+      amp-img {
+        background-color: black;
+        border: 5px solid white;
+      }
+    </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   </head>
   <body>
-    <h1>Welcome to the mobile web</h1>
+    <h1>Amp Makes mobile web faster</h1>
     <p>
-      Paragraph text
       <amp-img src="img/cat.jpg" alt="cat face" width=300 height=300 layout="responsive"></amp-img>
+      The cat's face looks spooky.
     </p>
   </body>
 </html>
